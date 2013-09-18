@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Xplane::VERSION
   spec.authors       = ["Eloy Gomez"]
   spec.email         = ["eloy@indeos.es"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   =  "Gem for communicate with X-Plane via UDP packages"
+  spec.summary       = "EventMachine based library for send and receive data from X-Plane Flight Simulator with ruby."
   spec.homepage      = ""
   spec.license       = "MIT"
 
