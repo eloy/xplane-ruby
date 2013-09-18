@@ -1,0 +1,23 @@
+* Xplane Ruby
+** Usage
+#+BEGIN_SRC ruby
+  #!/usr/bin/env ruby
+
+  require 'xplane'
+
+  Xplane.config do |c|
+    c.xplane_host = "10.254.0.110" # default "127.0.0.1"
+    c.xplane_port = 49000 # default 49000
+    c.listen_port = 49000 # default 49001
+    c.listen_address = "0.0.0.0" # default "127.0.0.1"
+  end
+
+  Xplane.on_data_received do |msg|
+    puts "Pitch: #{msg.pitch}\t Roll: #{msg.roll}\t Heading: #{msg.heading}\tAlt: #{msg.alt}"
+    msg.send throttle_cmd_1: 1.0, throttle_cmd_2: 1.0, throttle_cmd_3: 1.0, throttle_cmd_4: 1.0
+  end
+#+END_SRC
+
+* Contribute
+At this moment lib/xplane/data_mapper.rb is very incomplete. Pull
+requests with new elements will be welcome.
