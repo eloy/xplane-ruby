@@ -1,4 +1,7 @@
 * Xplane Ruby
+** Install instructions
+: gem install xplane
+
 ** Usage
 #+BEGIN_SRC ruby
   #!/usr/bin/env ruby
@@ -18,6 +21,6 @@
   end
 #+END_SRC
 
-* Contribute
+** Contribute
 At this moment lib/xplane/data_mapper.rb is very incomplete. Pull
-requests with new elements will be welcome.
+requests with new elements are very welcome.
