@@ -66,7 +66,7 @@ module Xplane::MessageDataFormater
   def new_element(element_id)
     e = [element_id]
     DATA_ELEMENTS.times do
-      e.push 0.0 # TODO
+      e.push -999 # Ignore
     end
     return e
   end
